@@ -162,12 +162,10 @@ An ensemble learning algorithm that combines multiple Decision Trees.
 For classification, the final prediction is generally based on majority voting:
 
 $$
-\hat{y}=
-\operatorname{mode}
-\{T_1(x),T_2(x),...,T_B(x)\}
+\hat{y} = \text{mode}(T_1(x), T_2(x), \ldots, T_B(x))
 $$
 
-where \(T_i\) represents an individual Decision Tree.
+where $T_i$ represents an individual Decision Tree.
 
 **scikit-learn:** `RandomForestClassifier`
 
